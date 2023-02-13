@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>HTML Links</h2>
+    <p>HTML links are defined with the a tag:</p>
+
+    <a href="#" onclick="myFunction('20')">Open app with args 20</a>
+    <p />
+    <a href="#" onclick="myFunction('40')">Open app with args 40</a>
+
+
+    <script>
+function myFunction(parameter)
+{
+	var uri = "https://stackoverflow.com/questions/12781829/vb-net-parse-query-string-to-array";
+	var encoded = encodeURIComponent(uri);
+	location.href = "ClickonceVBdotnetWithArgs.application?valuePassed="+parameter+"&urlPassed="+encoded;
+}
+    </script>
+
+</body>
+</html>
+
